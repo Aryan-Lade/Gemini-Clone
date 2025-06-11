@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div>
+            <div class="sidebar-header">
+                <div class="menu-icon" id="menu-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </div>
+                <span class="greeting-gemini">
+                    Gemini
+                </span>
+            </div>
+            <div class="sidebar-content">
+                <button class="new-chat-button">
+                    <svg class="icon small" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4v16m-8-8h16"></path>
+                    </svg>
+                    <span>New chat</span>
+                </button>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <!-- Settings button removed as per user's HTML -->
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <div class="header">
+            <div class="header-left">
+                <!-- The Gemini Text Logo is primarily on the sidebar in the image -->
+            </div>
+            <div class="header-right">
+                <!-- Model select and Upgrade button removed as per user's HTML -->
+                <img class="profile-pic" src="https://placehold.co/36x36/8a2be2/ffffff?text=A" alt="User Profile">
+            </div>
+        </div>
+
+        <div class="chat-area" id="chat-area">
+            <!-- Updated greeting text and added a span for "Gemini" to apply gradient -->
+            <div class="greeting" id="greeting">
+                Meet <span class="greeting-gemini">Gemini</span><br>your personal AI assistant
+            </div>
+            <div class="message-container" id="message-container">
+                <!-- Chat messages will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="input-section" id="input-section">
+            <div class="input-wrapper">
+                <textarea id="user-input" placeholder="Ask Gemini" rows="1"></textarea>
+                <div class="input-actions">
+                
+                    <button class="send-button" id="send-button">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="input-footer">
+                <!-- Deep Research and Canvas links removed as per user's HTML -->
+            </div>
+        </div>
+    </div>
+    <!-- Link to the external JavaScript file -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
