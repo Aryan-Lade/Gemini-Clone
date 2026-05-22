@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "buildCommand": "cd backend && npm install",
+  "devCommand": "cd backend && npm run dev",
+  "installCommand": "npm install && cd backend && npm install",
+  "outputDirectory": "backend",
+  "framework": "express"
+}
