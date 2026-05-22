@@ -1,0 +1,12 @@
+{
+  "name": "gemini-clone-frontend",
+  "version": "1.0.0",
+  "description": "Gemini Clone Frontend",
+  "scripts": {
+    "start": "http-server -p 3000 -c-1",
+    "serve": "npx http-server -p 3000 -o"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
