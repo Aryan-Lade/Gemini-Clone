@@ -51,6 +51,7 @@ router.post("/message", authenticate, async (req, res) => {
       const result = await callGeminiAPI(message);
       aiResponse = result.content;
     } catch (error) {
+      console.error("Gemini API call failed:", error.message);
       return res.status(500).json({
         error: "Failed to generate response",
         details: error.message,

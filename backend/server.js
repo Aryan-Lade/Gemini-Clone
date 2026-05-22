@@ -1,5 +1,15 @@
 import express from "express";
 import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
+
+// Get current directory
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load environment variables FIRST - before any other imports
+dotenv.config({ path: path.join(__dirname, ".env") });
+
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
@@ -10,9 +20,6 @@ import rateLimit from "express-rate-limit";
 import authRoutes from "./routes/auth.js";
 import chatRoutes from "./routes/chat.js";
 import userRoutes from "./routes/user.js";
-
-// Load environment variables
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
