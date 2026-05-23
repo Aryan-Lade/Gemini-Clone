@@ -1,16 +1,21 @@
 {
   "name": "gemini-clone",
   "version": "1.0.0",
-  "description": "Full-stack Gemini Clone application",
-  "main": "backend/server.js",
+  "description": "Full-stack Gemini Clone application - Production Ready",
+  "main": "api/index.js",
   "type": "module",
   "scripts": {
     "install-all": "npm install && cd backend && npm install",
-    "start": "cd backend && node server.js",
+    "start": "node api/index.js",
     "dev": "cd backend && npm run dev",
-    "build": "cd backend && npm install"
+    "build": "npm install && cd backend && npm install",
+    "vercel-build": "npm install && cd backend && npm install"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {}
 }

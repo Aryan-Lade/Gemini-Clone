@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Clone - AI Chat</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1>Gemini Clone</h1>
+          <button class="new-chat-btn" id="newChatBtn">+ New Chat</button>
+        </div>
+        <div class="chat-history" id="chatHistory">
+          <!-- Chat history items will be dynamically added here -->
+        </div>
+        <div class="sidebar-footer">
+          <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+      </aside>
+
+      <!-- Main Chat Area -->
+      <main class="chat-container">
+        <div class="messages" id="messagesContainer">
+          <div class="welcome-message">
+            <h2>Welcome to Gemini Clone</h2>
+            <p>Start a conversation to begin chatting with AI</p>
+          </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+          <div class="input-wrapper">
+            <textarea
+              id="messageInput"
+              placeholder="Type your message here..."
+              rows="1"
+            ></textarea>
+            <button id="sendBtn" class="send-btn">
+              <span>Send</span>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="./js/api.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
